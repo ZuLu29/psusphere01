@@ -48,6 +48,9 @@ class Student(BaseModel):
         return f"{self.lastname}, {self.firstname}"
 
 
+# delete if ever
+
+
 class OrgMember(BaseModel):
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
